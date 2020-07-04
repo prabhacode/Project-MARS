@@ -1,6 +1,6 @@
 ﻿@ignore
 Feature:5_ManualTestCases 
-	As a seller
+	As a user
 	I would like to add my profile details and view it on the profile page
 
 Scenario: Add a Language with null input

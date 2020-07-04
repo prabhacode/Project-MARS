@@ -44,7 +44,6 @@ namespace Project_MARS.Hookup
             }
             catch (Exception)
             {
-
                 Assert.Fail();
             }
         }

@@ -11,96 +11,59 @@ namespace Project_MARS.Specflow.Pages
 {
     class Profile : Drivers
     {
-        private static IWebElement ProfileTab => driver.FindElement(By.XPath("//div[@class='ui eight item menu']//a[@class='item'][contains(text(),'Profile')]"));
+        public static IWebElement ProfileTab => driver.FindElement(By.XPath("//div[@class='ui eight item menu']//a[@class='item'][contains(text(),'Profile')]"));
 
         //Languages tab
         public static IWebElement LanguagesTab => driver.FindElement(By.XPath("//a[text()='Languages']"));
-        private static IWebElement AddnewLanguageButton => driver.FindElement(By.XPath("//*[contains(@class, 'ui teal button ')]"));
-        private static IWebElement AddLanguageText => driver.FindElement(By.XPath("//input[@type='text'][@placeholder='Add Language']"));
-        private static IWebElement SelectLanguageLevel => driver.FindElement(By.XPath("//select[@class='ui dropdown']"));
-        private static IWebElement AddLanguagebutton => driver.FindElement(By.XPath("//input[@class='ui teal button']"));
-        private static IWebElement CancelLanguageButton => driver.FindElement(By.XPath("//input[@class='ui button']"));
-        private static IWebElement EditLanguageIcon => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment active tooltip-target']//i[@class='outline write icon']"));
-        private static IWebElement EditLanguageText => driver.FindElement(By.XPath("//input[@placeholder='Add Language']"));
-        private static IWebElement UpdateLanguageButton => driver.FindElement(By.XPath("//input[@class='ui teal button']"));
+        public static IWebElement AddnewLanguageButton => driver.FindElement(By.XPath("//*[contains(@class, 'ui teal button ')]"));
+        public static IWebElement AddLanguageText => driver.FindElement(By.XPath("//input[@type='text'][@placeholder='Add Language']"));
+        public static IWebElement SelectLanguageLevel => driver.FindElement(By.XPath("//select[@class='ui dropdown']"));
+        public static IWebElement AddLanguagebutton => driver.FindElement(By.XPath("//input[@class='ui teal button']"));
+        public static IWebElement CancelLanguageButton => driver.FindElement(By.XPath("//input[@class='ui button']"));
+        public static IWebElement EditLanguageIcon => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment active tooltip-target']//i[@class='outline write icon']"));
+        public static IWebElement EditLanguageText => driver.FindElement(By.XPath("//input[@placeholder='Add Language']"));
+        public static IWebElement UpdateLanguageButton => driver.FindElement(By.XPath("//input[@class='ui teal button']"));
+        public static IWebElement DeleteLanguageButton => driver.FindElement(By.XPath("//i[@class='remove icon']"));
+
 
         //Skills tab
-        private static IWebElement SkillsTab => driver.FindElement(By.XPath("//a[contains(text(),'Skills')]"));
-        private static IWebElement AddnewSkillButton => driver.FindElement(By.XPath("//div[@class='ui teal button']"));
-        private static IWebElement AddSkillText => driver.FindElement(By.XPath("//input[@placeholder='Add Skill']"));
-        private static IWebElement SelectSkillLevel => driver.FindElement(By.XPath("//select[@class='ui fluid dropdown']"));
-        private static IWebElement AddSkillbutton => driver.FindElement(By.XPath("//span[@class='buttons-wrapper']//input[contains(@class,'ui teal button')]"));
-        private static IWebElement EditSkillIcon => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//i[@class='outline write icon']"));
-        private static IWebElement EditSkillText => driver.FindElement(By.XPath("//input[@placeholder='Add Skill']"));
-        private static IWebElement UpdateSkillButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//input[@class='ui teal button']"));
+        public static IWebElement SkillsTab => driver.FindElement(By.XPath("//a[contains(text(),'Skills')]"));
+        public static IWebElement AddnewSkillButton => driver.FindElement(By.XPath("//div[@class='ui teal button']"));
+        public static IWebElement AddSkillText => driver.FindElement(By.XPath("//input[@placeholder='Add Skill']"));
+        public static IWebElement SelectSkillLevel => driver.FindElement(By.XPath("//select[@class='ui fluid dropdown']"));
+        public static IWebElement AddSkillbutton => driver.FindElement(By.XPath("//span[@class='buttons-wrapper']//input[contains(@class,'ui teal button')]"));
+        public static IWebElement EditSkillIcon => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//i[@class='outline write icon']"));
+        public static IWebElement EditSkillText => driver.FindElement(By.XPath("//input[@placeholder='Add Skill']"));
+        public static IWebElement UpdateSkillButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//input[@class='ui teal button']"));
+        public static IWebElement DeleteSkillButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment active tooltip-target']//tbody[1]//tr[1]//td[3]//span[2]//i[1]"));
 
         //Education Tab
-        private static IWebElement EducationTab => driver.FindElement(By.XPath("//a[@class='item'][contains(text(),'Education')]"));
-        private static IWebElement AddNewEducationButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//div[contains(@class,'ui teal button')][contains(text(),'Add New')]"));
-        private static IWebElement UniversityTextBox => driver.FindElement(By.XPath("//input[@placeholder='College/University Name']"));
-        private static IWebElement CountryOfUniversity => driver.FindElement(By.XPath("//select[@name='country']"));
-        private static IWebElement Title => driver.FindElement(By.XPath("//select[@name='title']"));
-        private static IWebElement Degree => driver.FindElement(By.XPath("//input[@placeholder='Degree']"));
-        private static IWebElement YearOfGraduation => driver.FindElement(By.XPath("//select[@name='yearOfGraduation']"));
-        private static IWebElement AddEducationButton => driver.FindElement(By.XPath("//div[@class='sixteen wide field']//input[contains(@class,'ui teal button')]"));
+        public static IWebElement EducationTab => driver.FindElement(By.XPath("//a[@class='item'][contains(text(),'Education')]"));
+        public static IWebElement AddNewEducationButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//div[contains(@class,'ui teal button')][contains(text(),'Add New')]"));
+        public static IWebElement UniversityTextBox => driver.FindElement(By.XPath("//input[@placeholder='College/University Name']"));
+        public static IWebElement CountryOfUniversity => driver.FindElement(By.XPath("//select[@name='country']"));
+        public static IWebElement Title => driver.FindElement(By.XPath("//select[@name='title']"));
+        public static IWebElement Degree => driver.FindElement(By.XPath("//input[@placeholder='Degree']"));
+        public static IWebElement YearOfGraduation => driver.FindElement(By.XPath("//select[@name='yearOfGraduation']"));
+        public static IWebElement AddEducationButton => driver.FindElement(By.XPath("//div[@class='sixteen wide field']//input[contains(@class,'ui teal button')]"));
 
         //Certifications Tab
-        private static IWebElement CertificationsTab => driver.FindElement(By.XPath("//a[contains(text(),'Certifications')]"));
-        private static IWebElement AddNewCertificationsButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//div[contains(@class,'ui teal button')][contains(text(),'Add New')]"));
-        private static IWebElement CertificateTextBox => driver.FindElement(By.XPath("//input[@placeholder='Certificate or Award']"));
-        private static IWebElement CertifiedFrom => driver.FindElement(By.XPath("//input[@placeholder='Certified From (e.g. Adobe)']"));
-        private static IWebElement CertifiedYear => driver.FindElement(By.XPath("//select[@name='certificationYear']"));
-        private static IWebElement AddCertificationsButton => driver.FindElement(By.XPath("//div[@class='five wide field']//input[contains(@class,'ui teal button')]"));
+        public static IWebElement CertificationsTab => driver.FindElement(By.XPath("//a[contains(text(),'Certifications')]"));
+        public static IWebElement AddNewCertificationsButton => driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//div[contains(@class,'ui teal button')][contains(text(),'Add New')]"));
+        public static IWebElement CertificateTextBox => driver.FindElement(By.XPath("//input[@placeholder='Certificate or Award']"));
+        public static IWebElement CertifiedFrom => driver.FindElement(By.XPath("//input[@placeholder='Certified From (e.g. Adobe)']"));
+        public static IWebElement CertifiedYear => driver.FindElement(By.XPath("//select[@name='certificationYear']"));
+        public static IWebElement AddCertificationsButton => driver.FindElement(By.XPath("//div[@class='five wide field']//input[contains(@class,'ui teal button')]"));
+
+        //Description
+        public static IWebElement DescriptionIcon => driver.FindElement(By.XPath("//i[@class='outline write icon']"));
+
+        public static IWebElement DescriptionText = driver.FindElement(By.XPath("//textarea[@placeholder='Please tell us about any hobbies, additional expertise, or anything else you’d like to add.']"));
+
+        public static IWebElement SaveDescriptionButton => driver.FindElement(By.XPath("//div[@class='ui twelve wide column']//button[@class='ui teal button'][text()='Save']"));
 
 
-        public static void Availability()
-        {
-            //clicking edit icon
-            driver.FindElement(By.XPath("//i[contains(@class,'right floated outline small write icon')][1]")).Click();
-
-            //choosing availability from dropdown
-            var SelectType = driver.FindElement(By.XPath("//select[@name='availabiltyType']"));
-            SelectType.Click();
-
-            //create select element object
-            var SelectElement = new SelectElement(SelectType);
-
-            //select by value
-            TurnOnWait();
-            SelectElement.SelectByValue("0");
-
-        }
-        public static void Hours()
-        {
-            //clicking edit icon
-            driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/span[1]/i[1]")).Click();
-
-            //choosing availability from dropdown
-            var SelectType = driver.FindElement(By.XPath("//select[@name='availabiltyHour']"));
-            SelectType.Click();
-            //create select element object
-            var SelectElement = new SelectElement(SelectType);
-
-            //select by index
-            SelectElement.SelectByIndex(3);
-
-        }
-
-        public static void EarnTarget()
-        {
-            //clicking edit icon
-            driver.FindElement(By.XPath("//span[contains(text(),'Less than $500 per month')]//i[@class='right floated outline small write icon']")).Click();
-
-            //choosing availability from dropdown
-            var SelectType = driver.FindElement(By.XPath("//select[@name='availabiltyTarget']"));
-            SelectType.Click();
-
-            //create select element object
-            var SelectElement = new SelectElement(SelectType);
-
-            //select by index
-            SelectElement.SelectByIndex(3);
-        }
+       
 
         //Adding description
         public static void AddDescription(String description)

@@ -11,7 +11,7 @@ namespace Project_MARS.Specflow.Pages
     {
         public static void Login(String username, String password)
         {
-            Drivers.NavigateUrl();
+            // Drivers.NavigateUrl();
 
             //Clicking SignIn button
             Drivers.driver.FindElement(By.XPath("//*[@id='home']/div/div/div[1]/div/a")).Click();
@@ -24,8 +24,8 @@ namespace Project_MARS.Specflow.Pages
 
             //Clicking Login Button
             Drivers.driver.FindElement(By.XPath("/html/body/div[2]/div/div/div[1]/div/div[4]/button")).Click();
-            Drivers.TurnOnWait();
-            Assert.That(Drivers.driver.FindElement(By.XPath("//div[@class='ui eight item menu']//a[@class='item'][contains(text(),'Profile')]")).Text, Is.EqualTo("Profile"));
+            //Drivers.TurnOnWait();
+            //  Assert.That(Drivers.driver.FindElement(By.XPath("//div[@class='ui eight item menu']//a[@class='item'][contains(text(),'Profile')]")).Text, Is.EqualTo("Profile"));
         }
     }
 }
